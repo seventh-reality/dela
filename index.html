@@ -1,3 +1,22 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <title>TNA AR</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="./src/threejs_wasm_worker.js"></script>
+    <script href="https://developers.google.com/ar/develop/java/scene-viewer"></script>	
+    <script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>	
+</head>
+<body>
+    <div id="card">
 <model-viewer src="80d9e4b53b2448a4bb1411a7ff3e63a7.glb" poster="../../assets/ShopifyModels/Chair.webp" tone-mapping="neutral" shadow-intensity="1" ar camera-controls touch-action="pan-y" alt="A 3D model carousel">
   
   <button slot="ar-button" id="ar-button">
@@ -171,3 +190,5 @@
   }
 
 </style>
+      </body>
+</html>
